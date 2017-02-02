@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using docker_fishing_trip.Models;
+using docker_fishing_trip.ViewModels;
 
 // For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -18,7 +19,13 @@ namespace docker_fishing_trip.Controllers
 
         public ViewResult List()
         {
-            return View(_pieRepository.Pies);
+            var viewModel = new PiesListViewModel
+            {
+                Pies = _pieRepository.Pies,
+                CurrentCategory = "Cheescakes"
+            };
+
+            return View(viewModel);
         }
     }
 }
