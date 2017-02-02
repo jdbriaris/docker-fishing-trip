@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{5C4A9104-7D11-4215-AB76-3B6B33A2E981}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{591C5E19-839F-48B5-B152-586C44161FDC}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "docker-fishing-trip", "src\docker-fishing-trip\docker-fishing-trip.xproj", "{8EAEA8B0-1921-4618-AD65-0AF2E6C3C7DD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8EAEA8B0-1921-4618-AD65-0AF2E6C3C7DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EAEA8B0-1921-4618-AD65-0AF2E6C3C7DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EAEA8B0-1921-4618-AD65-0AF2E6C3C7DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EAEA8B0-1921-4618-AD65-0AF2E6C3C7DD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8EAEA8B0-1921-4618-AD65-0AF2E6C3C7DD} = {5C4A9104-7D11-4215-AB76-3B6B33A2E981}
+	EndGlobalSection
+EndGlobal
