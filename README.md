@@ -12,11 +12,12 @@ The above settings will work for the majority of proxy scenarios. However, npm d
 1. Install [Fiddler](http://www.telerik.com/fiddler) - a web proxy tool that supports NTLM authentication.
 2. Open Fiddler and turn on Automatic Authentication (`Rules > Automatic Authentication`).
 3. Open a command terminal and execute the following npm configuration commands to route calls via Fiddler
+
     ````bash
-    registry=http://registry.npmjs.org
-    proxy=http://127.0.0.1:8888
-    https-proxy=http://127.0.0.1:8888
-    http-proxy=http://127.0.0.1:8888
+    npm config set registry http://registry.npmjs.org
+    npm config set proxy http://127.0.0.1:8888
+    npm config set https-proxy http://127.0.0.1:8888
+    npm config set http-proxy http://127.0.0.1:8888
     ````
 NOTE: This solution requires that you have Fiddler runnning in the background whilst attempting to install packages.
  
